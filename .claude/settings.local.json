@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python main.py)",
+      "Bash(kill %1)",
+      "Bash(wait)",
+      "Bash(.venv/Scripts/python.exe -c \"import pandas; import pyautogui; import PIL; import pytesseract; import pynput; import keyboard\")",
+      "Bash(.venv/Scripts/pip.exe list *)",
+      "Bash(.venv/Scripts/python.exe main.py)",
+      "Bash(.venv/Scripts/pip.exe install *)",
+      "Bash(.venv/Scripts/python.exe -c \"import about_us; print\\('Import OK'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(start \"\" .venv/Scripts/pythonw.exe main.py)"
+    ]
+  }
+}

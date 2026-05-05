@@ -1,0 +1,293 @@
+{
+  "scripts": {
+    "e": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 222,
+          "y": 222
+        },
+        {
+          "type": "pre-loop",
+          "file": "D:/Onedrive/OneDrive - FPT Corporation/Documents/new_patient_sub.xlsx"
+        },
+        {
+          "type": "type",
+          "excel_col": "B"
+        },
+        {
+          "type": "type",
+          "excel_col": "C"
+        },
+        {
+          "type": "type",
+          "text": "<->"
+        },
+        {
+          "type": "post-loop"
+        }
+      ],
+      "created_at": "2025-06-09 14:47:41",
+      "modified_at": "2025-06-09 14:47:41"
+    },
+    "f": {
+      "actions": [
+        {
+          "type": "cmd_run",
+          "cmd": "d:\ncd d:\\\nmkdir xyx"
+        }
+      ],
+      "created_at": "2025-06-07 14:51:32",
+      "modified_at": "2025-06-07 14:51:32"
+    },
+    "aa": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 250,
+          "y": 294
+        },
+        {
+          "type": "type",
+          "text": "abcdddd"
+        },
+        {
+          "type": "click",
+          "x": 1802,
+          "y": 15
+        }
+      ],
+      "created_at": "2026-04-13 22:58:15",
+      "modified_at": "2026-04-13 22:58:15"
+    },
+    "ab": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 5,
+          "y": 6
+        },
+        {
+          "type": "click",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "pre-loop"
+        },
+        {
+          "type": "click",
+          "x": 3,
+          "y": 4
+        },
+        {
+          "type": "click",
+          "x": 4,
+          "y": 5
+        },
+        {
+          "type": "post-loop"
+        },
+        {
+          "type": "click",
+          "x": 3,
+          "y": 4
+        }
+      ],
+      "created_at": "2025-06-06 15:42:16",
+      "modified_at": "2025-06-06 15:42:16"
+    },
+    "ac_copy": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "pre-loop"
+        },
+        {
+          "type": "click",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "click",
+          "x": 2,
+          "y": 55
+        },
+        {
+          "type": "type",
+          "text": "abc"
+        },
+        {
+          "type": "type",
+          "excel_col": "C"
+        },
+        {
+          "type": "post-loop"
+        },
+        {
+          "type": "type",
+          "text": "DE"
+        }
+      ],
+      "created_at": "2025-06-06 21:48:50",
+      "modified_at": "2025-06-06 21:48:50"
+    },
+    "Logout": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 1718,
+          "y": 94
+        },
+        {
+          "type": "click",
+          "x": 1770,
+          "y": 188
+        },
+        {
+          "type": "check",
+          "Lang": "English",
+          "Word(resx)": "Logout",
+          "Content": "Login with barcode",
+          "TC No.": "LOGOUT_001",
+          "Priority": "중 (Middle)"
+        }
+      ],
+      "created_at": "2026-05-05 14:31:01",
+      "modified_at": "2026-05-05 14:31:01",
+      "testStatus": "Pass",
+      "lastTestedAt": "2026-05-05 14:31:30",
+      "lastTestReport": {
+        "scriptName": "Logout",
+        "runTime": "2026-05-05 14:31:30",
+        "result": "Pass",
+        "failedStep": "",
+        "errorMessage": "",
+        "expected": "",
+        "actual": "",
+        "exception": ""
+      }
+    },
+    "a": {
+      "actions": [
+        {
+          "type": "run_script",
+          "scripts": [
+            "Login"
+          ]
+        },
+        {
+          "type": "run_script",
+          "scripts": [
+            "Logout"
+          ]
+        }
+      ],
+      "created_at": "2025-06-07 20:33:13",
+      "modified_at": "2025-06-07 20:33:13"
+    },
+    "ae": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "pre-loop"
+        },
+        {
+          "type": "click",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "click",
+          "x": 2,
+          "y": 55
+        },
+        {
+          "type": "type",
+          "text": "abc"
+        },
+        {
+          "type": "type",
+          "excel_col": "C"
+        },
+        {
+          "type": "post-loop"
+        },
+        {
+          "type": "type",
+          "text": "DE"
+        }
+      ],
+      "created_at": "2025-06-10 13:53:35",
+      "modified_at": "2025-06-10 13:53:35"
+    },
+    "Login": {
+      "actions": [
+        {
+          "type": "click",
+          "x": 949,
+          "y": 491
+        },
+        {
+          "type": "type",
+          "text": "lynn"
+        },
+        {
+          "type": "click",
+          "x": 939,
+          "y": 541
+        },
+        {
+          "type": "type",
+          "text": "1234"
+        },
+        {
+          "type": "click",
+          "x": 955,
+          "y": 614
+        },
+        {
+          "type": "check",
+          "Lang": "English",
+          "Word(resx)": "Login",
+          "Content": "Open Recent Recipe",
+          "TC No.": "Login_001",
+          "Priority": "중 (Middle)"
+        }
+      ],
+      "created_at": "2026-05-05 14:05:29",
+      "modified_at": "2026-05-05 14:05:29",
+      "testStatus": "Pass",
+      "lastTestedAt": "2026-05-05 14:31:23",
+      "lastTestReport": {
+        "scriptName": "Login",
+        "runTime": "2026-05-05 14:31:23",
+        "result": "Pass",
+        "failedStep": "",
+        "errorMessage": "",
+        "expected": "",
+        "actual": "",
+        "exception": ""
+      }
+    }
+  },
+  "script_order": [
+    "Login",
+    "Logout",
+    "e",
+    "f",
+    "aa",
+    "ab",
+    "ae",
+    "ac_copy",
+    "a"
+  ]
+}

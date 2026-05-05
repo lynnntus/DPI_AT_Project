@@ -1,0 +1,26 @@
+# GUI and Image Processing
+# tkinter is included with Python by default
+Pillow>=9.0.0
+
+# OCR and Computer Vision
+pytesseract>=0.3.10
+paddleocr>=2.6.0
+opencv-python>=4.5.0
+numpy>=1.21.0
+
+# Automation and Mouse/Keyboard Control
+pyautogui>=0.9.54
+pywinauto>=0.6.8
+pynput>=1.7.6
+
+# Data Processing
+pandas>=1.3.0
+openpyxl>=3.0.0
+
+# System and Utilities
+keyboard>=0.13.5
+
+# Additional libraries that might be needed
+# Uncomment if you encounter issues with these:
+# setuptools>=65.0.0
+# wheel>=0.37.0
