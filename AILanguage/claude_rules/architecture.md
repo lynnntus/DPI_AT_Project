@@ -1,6 +1,8 @@
 # Architecture
 
-## Layer Diagram
+> Chi tiết đầy đủ: [`docs/architecture.md`](../docs/architecture.md)
+
+## Quick Reference
 
 ```
 UI Layer              →  Logic Layer           →  Data Layer
@@ -16,30 +18,8 @@ import_dialog.py
 
 Entry point: `main.py` → `ScriptRunnerApp` (Tkinter sidebar navigation, tabs)
 
-## Key Concepts
+## Rules
 
-**Script** — Chuỗi action (`click`, `type`, `hotkey`, `scroll`, `check`, `run_script`, `cmd_run`). Gọi script khác được (guard chống đệ quy). Lưu `scripts.json`, thứ tự qua `script_order`.
-
-**Check Item** — Mục tiêu OCR: ngôn ngữ + nội dung mong đợi + vùng màn hình (TopLeft/BottomRight). Runner chụp → Tesseract OCR → so sánh.
-
-**Excel Loop** — `pre-loop`/`post-loop` duyệt dòng Excel, truyền cell vào `type` qua column mapping (A, B, C...).
-
-## Code Patterns
-
-- File paths: `utils.py` → `BASE_DIR` (exe dir hoặc script dir)
-- Data: JSON (structured), CSV (flat settings)
-- UI tabs: `create_*_tab(parent, ...)`
-- Editor: `tk.Toplevel` + `transient()` + `grab_set()`
-- Long ops: daemon threads
-- OCR: `eng`, `chi_sim`, `jpn`
-
-## Tech Stack
-
-| Mục đích | Thư viện |
-|----------|----------|
-| GUI | Python 3 + Tkinter |
-| Automation | pyautogui, keyboard, pynput |
-| OCR | pytesseract + Pillow |
-| Excel | pandas + openpyxl |
-
-Tesseract OCR path: `C:\Program Files\Tesseract-OCR\tesseract.exe`
+- **11 core files** — không đổi tên, không tách/gộp (xem [stability.md](stability.md))
+- **Import chain** — xem dependency map trong `docs/architecture.md`
+- **Data flow** — xem read/write paths trong `docs/architecture.md`

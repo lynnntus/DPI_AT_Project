@@ -21,7 +21,7 @@ class SettingManager:
             return {
                 "resolution": "HD",
                 "start_app": "",
-                "delay": "1",  # Mặc định delay là 1 giây
+                "delay": "10",
             }
 
     def save_settings(self, settings):

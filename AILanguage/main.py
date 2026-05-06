@@ -89,7 +89,7 @@ class ScriptRunnerApp:
         # el
         if tab_name == "Script list":
             create_script_list_tab(self.root, self.scripts, self.script_order, self.check_items,
-                                   self.settings.get("delay", "1"))
+                                   self.settings.get("delay", "10"))
         elif tab_name == "Setting":
             self.show_setting_tab()
         elif tab_name == "Check list":
@@ -113,7 +113,7 @@ class ScriptRunnerApp:
 
         # Combobox và nút Run, dùng cũ từ ui_runner.py
         create_run_script_tab_content(frame, self.scripts, self.check_items, self.root, self.start_app_var_run,
-                                      self.settings.get("delay", "1"))
+                                      self.settings.get("delay", "10"))
 
         # # Đồng bộ 2 biến start_app: khi thay đổi biến này thì cập nhật biến start_app_var_setting
         # def on_run_start_app_changed(*args):
@@ -136,9 +136,9 @@ class ScriptRunnerApp:
         rb_fhd = tk.Radiobutton(frame, text="FullHD (1080p): 1920px x 1080px", variable=resolution_var, value="FullHD")
         rb_fhd.pack(anchor='nw')
 
-        # Delay setting: Add new field for Delay (in seconds)
-        tk.Label(frame, text="Delay (seconds):", font=("Arial", 12)).pack(anchor='nw', pady=(20, 5))
-        delay_var = tk.StringVar(value=self.settings.get("delay", "1"))  # Default value is 1 second
+        # Timeout setting: Max wait time for OCR verify (seconds)
+        tk.Label(frame, text="Timeout (seconds):", font=("Arial", 12)).pack(anchor='nw', pady=(20, 5))
+        delay_var = tk.StringVar(value=self.settings.get("delay", "10"))
 
         delay_entry = tk.Entry(frame, textvariable=delay_var, width=10)
         delay_entry.pack(anchor='nw', pady=(0, 10))

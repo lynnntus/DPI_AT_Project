@@ -57,14 +57,15 @@ class _ScriptStepError(Exception):
         super().__init__(message)
 
 
-def _fail_result(failed_step, error_message, expected="", actual="", exception_str=""):
+def _fail_result(failed_step, error_message, expected="", actual="", exception_str="", results=None):
     return {
         "success": False,
         "failedStep": failed_step,
         "errorMessage": error_message,
         "expected": expected,
         "actual": actual,
-        "exception": exception_str
+        "exception": exception_str,
+        "results": results if results is not None else []
     }
 
 
@@ -91,7 +92,8 @@ def run_script(actions, scripts, check_items, delay):
                     return _fail_result(step_desc,
                         "User cancelled Excel file selection",
                         "Excel file selected for loop execution",
-                        "No file was selected")
+                        "No file was selected",
+                        results=results)
                 df = pd.read_excel(excel_path)
                 loop_actions = []
                 i += 1
@@ -105,13 +107,16 @@ def run_script(actions, scripts, check_items, delay):
                             do_action(a, scripts, check_items, results, timestamp_folder, delay, row)
                         except _ScriptStepError as e:
                             return _fail_result(e.step or loop_desc, e.message,
-                                                e.expected, e.actual, e.exception_str)
+                                                e.expected, e.actual, e.exception_str,
+                                                results=results)
                         except Exception as ex:
                             return _fail_result(loop_desc, str(ex),
                                 "Action completes without error",
                                 f"{type(ex).__name__}: {ex}",
-                                traceback.format_exc())
-                        time.sleep(float(delay))
+                                traceback.format_exc(),
+                                results=results)
+                        if a['type'] != 'check':
+                            time.sleep(_STEP_DELAY)
                 while i < n and actions[i]['type'] == 'post-loop':
                     i += 1
             else:
@@ -119,14 +124,17 @@ def run_script(actions, scripts, check_items, delay):
                 i += 1
         except _ScriptStepError as e:
             return _fail_result(e.step or step_desc, e.message,
-                                e.expected, e.actual, e.exception_str)
+                                e.expected, e.actual, e.exception_str,
+                                results=results)
         except Exception as ex:
             return _fail_result(step_desc, str(ex),
                 "Action completes without error",
                 f"{type(ex).__name__}: {ex}",
-                traceback.format_exc())
+                traceback.format_exc(),
+                results=results)
 
-        time.sleep(float(delay))
+        if action['type'] != 'check':
+            time.sleep(_STEP_DELAY)
 
     # Check OCR results for mismatches
     for r in results:
@@ -135,21 +143,44 @@ def run_script(actions, scripts, check_items, delay):
                 f"OCR Check: {r.get('Label_ID', 'unknown')}",
                 f"OCR text mismatch for '{r.get('Expected', '')}'",
                 r.get("Expected", ""),
-                r.get("Detected", ""))
+                r.get("Detected", ""),
+                results=results)
 
-    # Save Excel report
-    if results:
-        try:
-            df_report = pd.DataFrame(results)
-            os.makedirs(result_folder, exist_ok=True)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            report_path = os.path.join(result_folder, f"ocr_result_report_{timestamp}.xlsx")
-            df_report.to_excel(report_path, index=False)
-            logging.info(f"Done. Report saved to: {report_path}")
-        except Exception as e:
-            logging.exception("Failed to save Excel report")
+    return {"success": True, "results": results}
 
-    return {"success": True}
+
+_DEFAULT_TIMEOUT = 10
+_STEP_DELAY = 1
+
+
+def _parse_timeout(value):
+    try:
+        t = float(value)
+        return t if t >= 1 else _DEFAULT_TIMEOUT
+    except (TypeError, ValueError):
+        return _DEFAULT_TIMEOUT
+
+
+def _wait_and_verify(check_item, timestamp_folder, timeout):
+    deadline = time.time() + timeout
+    retries = 0
+    last_result = None
+    while True:
+        retries += 1
+        result = capture_check_region(check_item, timestamp_folder)
+        last_result = result
+        if result["Match"] == "✅":
+            logging.info(
+                f"OCR verify PASS on retry #{retries}: '{result['Expected']}' "
+                f"(elapsed={timeout - (deadline - time.time()):.1f}s)")
+            return result
+        if time.time() >= deadline:
+            elapsed = timeout - (deadline - time.time())
+            logging.warning(
+                f"OCR verify TIMEOUT after {retries} retries ({elapsed:.1f}s): "
+                f"expected='{result['Expected']}', detected='{result['Detected']}'")
+            return last_result
+        time.sleep(1)
 
 
 def do_action(action, scripts, check_items, results, timestamp_folder, delay, row=None):
@@ -188,7 +219,8 @@ def do_action(action, scripts, check_items, results, timestamp_folder, delay, ro
                 break
         if found:
             try:
-                result = capture_check_region(found, timestamp_folder)
+                timeout = _parse_timeout(delay)
+                result = _wait_and_verify(found, timestamp_folder, timeout)
                 results.append(result)
             except Exception as ex:
                 raise _ScriptStepError(
@@ -253,7 +285,19 @@ def create_run_script_tab_content(parent, scripts, check_items, root, start_app_
             beep()
             time.sleep(1)
 
-        run_script(actions, scripts, check_items, delay)
+        result = run_script(actions, scripts, check_items, delay)
+
+        ocr_results = result.get("results", []) if result else []
+        if ocr_results:
+            try:
+                os.makedirs(result_folder, exist_ok=True)
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                report_path = os.path.join(result_folder, f"ocr_result_report_{timestamp}.xlsx")
+                pd.DataFrame(ocr_results).to_excel(report_path, index=False)
+                logging.info(f"Done. Report saved to: {report_path}")
+            except Exception as e:
+                logging.exception("Failed to save Excel report")
+
         root.deiconify()
 
     tk.Button(parent, text="Run", command=run_selected_script, width=12).grid(row=2, column=1, pady=5, sticky="w")

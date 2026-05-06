@@ -152,22 +152,22 @@
           "type": "check",
           "Lang": "English",
           "Word(resx)": "Logout",
-          "Content": "Login with barcode",
-          "TC No.": "LOGOUT_001",
+          "Content": "KOYOUNG TECHNOLOGY",
+          "TC No.": "LOGOUT-001",
           "Priority": "중 (Middle)"
         }
       ],
-      "created_at": "2026-05-05 14:31:01",
-      "modified_at": "2026-05-05 14:31:01",
-      "testStatus": "Pass",
-      "lastTestedAt": "2026-05-05 14:31:30",
+      "created_at": "2026-05-06 14:51:15",
+      "modified_at": "2026-05-06 14:51:15",
+      "testStatus": "Fail",
+      "lastTestedAt": "2026-05-06 17:41:23",
       "lastTestReport": {
         "scriptName": "Logout",
-        "runTime": "2026-05-05 14:31:30",
-        "result": "Pass",
-        "failedStep": "",
-        "errorMessage": "",
-        "expected": "",
+        "runTime": "2026-05-06 17:41:23",
+        "result": "Fail",
+        "failedStep": "OCR Check: LOGOUT-001",
+        "errorMessage": "OCR text mismatch for 'KOYOUNG TECHNOLOGY'",
+        "expected": "KOYOUNG TECHNOLOGY",
         "actual": "",
         "exception": ""
       }
@@ -242,8 +242,8 @@
         },
         {
           "type": "click",
-          "x": 939,
-          "y": 541
+          "x": 926,
+          "y": 550
         },
         {
           "type": "type",
@@ -255,21 +255,26 @@
           "y": 614
         },
         {
+          "type": "click",
+          "x": 444,
+          "y": 422
+        },
+        {
           "type": "check",
           "Lang": "English",
           "Word(resx)": "Login",
-          "Content": "Open Recent Recipe",
-          "TC No.": "Login_001",
-          "Priority": "중 (Middle)"
+          "Content": "Recipe Information",
+          "TC No.": "LOGIN-002",
+          "Priority": "상 (High)"
         }
       ],
-      "created_at": "2026-05-05 14:05:29",
-      "modified_at": "2026-05-05 14:05:29",
+      "created_at": "2026-05-06 15:53:33",
+      "modified_at": "2026-05-06 15:53:33",
       "testStatus": "Pass",
-      "lastTestedAt": "2026-05-05 14:31:23",
+      "lastTestedAt": "2026-05-06 17:40:50",
       "lastTestReport": {
         "scriptName": "Login",
-        "runTime": "2026-05-05 14:31:23",
+        "runTime": "2026-05-06 17:40:50",
         "result": "Pass",
         "failedStep": "",
         "errorMessage": "",

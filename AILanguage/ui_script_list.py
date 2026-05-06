@@ -1,12 +1,17 @@
+import logging
+import os
+import re
 import tkinter as tk
+from datetime import datetime
 from PIL import Image, ImageTk
 from tkinter import ttk, messagebox
+import pandas as pd
 from script_manager import save_scripts_and_order, now_iso, mark_running, mark_pass, mark_fail
 from ui_editor import open_script_editor_window
 from ui_runner import run_script
 import time
 
-from utils import all_check_items_exist, beep
+from utils import all_check_items_exist, beep, result_folder
 
 checked_img = None
 unchecked_img = None
@@ -68,6 +73,8 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
             beep()
             time.sleep(1)
 
+        all_results = {}
+
         for script_name in selected_scripts:
             if script_name not in scripts:
                 continue
@@ -93,6 +100,8 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
             mark_running(scripts, script_name, script_order)
             result = run_script(actions, scripts, check_items, delay)
 
+            all_results[script_name] = result.get("results", []) if result else []
+
             if result and result.get("success"):
                 mark_pass(scripts, script_name, script_order)
             else:
@@ -102,6 +111,21 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
                           result.get("expected", "") if result else "",
                           result.get("actual", "") if result else "",
                           result.get("exception", "") if result else "")
+
+        if any(all_results.values()):
+            try:
+                os.makedirs(result_folder, exist_ok=True)
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                report_path = os.path.join(result_folder, f"ocr_result_report_{timestamp}.xlsx")
+                with pd.ExcelWriter(report_path) as writer:
+                    for sname, sresults in all_results.items():
+                        if sresults:
+                            sheet = re.sub(r'[\\/?*\[\]:]', '_', sname)[:31] or 'Sheet1'
+                            df = pd.DataFrame(sresults)
+                            df.to_excel(writer, sheet_name=sheet, index=False)
+                logging.info(f"Done. Report saved to: {report_path}")
+            except Exception as e:
+                logging.exception("Failed to save Excel report")
 
         root.deiconify()
         refresh()
