@@ -160,15 +160,15 @@
       "created_at": "2026-05-06 14:51:15",
       "modified_at": "2026-05-06 14:51:15",
       "testStatus": "Fail",
-      "lastTestedAt": "2026-05-06 17:41:23",
+      "lastTestedAt": "2026-05-08 09:56:09",
       "lastTestReport": {
         "scriptName": "Logout",
-        "runTime": "2026-05-06 17:41:23",
+        "runTime": "2026-05-08 09:56:09",
         "result": "Fail",
         "failedStep": "OCR Check: LOGOUT-001",
         "errorMessage": "OCR text mismatch for 'KOYOUNG TECHNOLOGY'",
         "expected": "KOYOUNG TECHNOLOGY",
-        "actual": "",
+        "actual": "OO",
         "exception": ""
       }
     },
@@ -271,10 +271,10 @@
       "created_at": "2026-05-06 15:53:33",
       "modified_at": "2026-05-06 15:53:33",
       "testStatus": "Pass",
-      "lastTestedAt": "2026-05-06 17:40:50",
+      "lastTestedAt": "2026-05-08 09:55:36",
       "lastTestReport": {
         "scriptName": "Login",
-        "runTime": "2026-05-06 17:40:50",
+        "runTime": "2026-05-08 09:55:36",
         "result": "Pass",
         "failedStep": "",
         "errorMessage": "",

@@ -127,3 +127,32 @@ post-loop action → kết thúc loop
 | [crm.md](claude_rules/crm.md) | Issue template, 5 Whys, translation | Viết bug report |
 | [ocr.md](claude_rules/ocr.md) | **OCR config, language, matching, evidence rules** | **Sửa OCR pipeline** |
 | [prompt_guidelines.md](claude_rules/prompt_guidelines.md) | Prompt format, anti-patterns | Tối ưu prompt |
+| [ai_workflow.md](claude_rules/ai_workflow.md) | **AI coding workflow, stability, investigation rules** | **Mọi task — đọc trước khi bắt đầu** |
+
+## AI Workflow Rules (Quick Reference)
+
+> Chi tiết đầy đủ: [ai_workflow.md](claude_rules/ai_workflow.md) — **đọc trước khi bắt đầu mọi task**
+
+| # | Rule | Key Point |
+|---|------|-----------|
+| 1 | **Investigation First** | Không assume root cause. Check reflog, runtime, branches, pyc cache. Screenshot evidence > grep |
+| 2 | **Minimal Change Policy** | Edit (patch) only. Không rewrite file. Không refactor/cleanup ngoài scope |
+| 3 | **Approval Before Write** | Report file, function, scope, risk trước khi sửa. Large patch cần explicit approval |
+| 4 | **Phase Isolation** | Investigate → Plan → Implement → Test. Không merge phases. Không mix feature + refactor |
+| 5 | **Regression Safety** | Preserve existing behavior. Thêm mới OK, đổi/xóa cũ cần approval |
+| 6 | **Import/Export Conventions** | TSV (UTF-8 BOM) = primary DRM-safe format. Excel = convenience. Round-trip guarantee |
+| 7 | **Token Efficiency** | Patch nhỏ, reuse code, targeted reads. Không generate large rewrites |
+| 8 | **Runtime Verification** | Verify widget/behavior tại runtime. Source reading alone = insufficient |
+| 9 | **AI Coding Workflow** | 6-step: Investigate → Report → Propose → Approve → Implement → Verify. Không skip |
+| 10 | **Desktop Utility Stability** | Stability > architecture. Simple > clever. No unnecessary patterns/frameworks |
+
+### Standard Workflow (mọi task)
+
+```
+Step 1: INVESTIGATE  → đọc code, git history/reflog, thu thập evidence
+Step 2: REPORT       → báo cáo findings + assumptions + uncertainty
+Step 3: PROPOSE      → đề xuất solutions (scope, risk, effort)
+Step 4: APPROVE      → user chọn solution, confirm scope
+Step 5: IMPLEMENT    → minimal patches, phase isolation
+Step 6: VERIFY       → tests + runtime verify + regression check
+```
