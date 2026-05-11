@@ -1,6 +1,10 @@
 import logging
+import os
 import tkinter as tk
+from datetime import datetime
 from tkinter import ttk, messagebox, filedialog
+
+import pandas as pd
 
 from ui_check_editor import open_check_editor
 from import_dialog import open_import_dialog  # Import hàm open_import_dialog
@@ -113,6 +117,42 @@ def create_check_list_tab(parent_frame, app, check_items, refresh_callback):
     tk.Button(button_frame, text="Import from Excel",
               command=lambda: open_import_dialog(parent_frame, app, check_items, refresh_callback)).pack(side=tk.LEFT,
                                                                                                     padx=5)
+
+    def export_to_excel():
+        if not check_items:
+            messagebox.showwarning("Warning", "No check items to export.")
+            return
+        file_path = filedialog.asksaveasfilename(
+            defaultextension=".xlsx",
+            filetypes=[("Excel files", "*.xlsx")],
+            initialfile=f"CheckList_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+        )
+        if not file_path:
+            return
+        try:
+            rows = []
+            for key, item in check_items.items():
+                rows.append({
+                    "Lang": item.get("Lang", ""),
+                    "TC No.": item.get("TC No.", ""),
+                    "Word(resx)": item.get("Word(resx)", ""),
+                    "Content": item.get("Content", ""),
+                    "Priority": item.get("Priority", ""),
+                    "TopLeft (x)": item.get("TopLeft (x)", ""),
+                    "TopLeft (y)": item.get("TopLeft (y)", ""),
+                    "BottomRight (x)": item.get("BottomRight (x)", ""),
+                    "BottomRight (y)": item.get("BottomRight (y)", ""),
+                })
+            df = pd.DataFrame(rows)
+            df.to_excel(file_path, index=False)
+            messagebox.showinfo("Success", f"Exported {len(rows)} items to:\n{file_path}")
+            logging.info(f"Checklist exported to: {file_path}")
+        except Exception as e:
+            logging.exception("Failed to export checklist")
+            messagebox.showerror("Error", f"Export failed: {e}")
+
+    tk.Button(button_frame, text="Export to Excel", width=14,
+              command=export_to_excel).pack(side=tk.LEFT, padx=5)
 
     # Filter Frame
     filter_frame = tk.Frame(frame)
