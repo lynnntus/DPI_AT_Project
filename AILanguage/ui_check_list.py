@@ -135,7 +135,7 @@ def create_check_list_tab(parent_frame, app, check_items, refresh_callback):
                 rows.append({
                     "Lang": item.get("Lang", ""),
                     "TC No.": item.get("TC No.", ""),
-                    "Word(resx)": item.get("Word(resx)", ""),
+                    "Function": item.get("Word(resx)", ""),
                     "Content": item.get("Content", ""),
                     "Priority": item.get("Priority", ""),
                     "TopLeft (x)": item.get("TopLeft (x)", ""),
@@ -171,8 +171,8 @@ def create_check_list_tab(parent_frame, app, check_items, refresh_callback):
         tk.Radiobutton(filter_frame, text=l, variable=lang_filter_var, value=l,
                        command=lambda: refresh_after_search()).pack(side=tk.LEFT)
 
-    # Word(resx) combobox
-    tk.Label(filter_frame, text="Word(resx):").pack(side=tk.LEFT, padx=(12, 0))
+    # Function combobox
+    tk.Label(filter_frame, text="Function:").pack(side=tk.LEFT, padx=(12, 0))
     wordresx_filter_var = tk.StringVar(value="All")
 
     def get_all_wordresx():
@@ -244,7 +244,7 @@ def create_check_list_tab(parent_frame, app, check_items, refresh_callback):
 
     tree.heading("Lang", text="Lang", anchor='w')
     tree.heading("TC No.", text="TC No.", anchor='w')
-    tree.heading("Word(resx)", text="Word(resx)", anchor='w')
+    tree.heading("Word(resx)", text="Function", anchor='w')
     tree.heading("Content", text="Content", anchor='w')
     tree.heading("Priority", text="Priority", anchor='w')
     tree.heading("TopLeft (x)", text="TL X", anchor='center')
@@ -377,6 +377,73 @@ def create_check_list_tab(parent_frame, app, check_items, refresh_callback):
     tk.Button(btn_frame, text="Delete All", command=on_delete_all, width=12).pack(fill=tk.X, pady=2)  # Nút Delete All
     tk.Button(btn_frame, text="Copy", command=on_copy, width=12).pack(fill=tk.X, pady=2)
     tk.Button(btn_frame, text="Get XY Position", command=on_get_position, width=12).pack(fill=tk.X, pady=2)
+
+    # Move Up / Move Down
+    move_up_btn = tk.Button(btn_frame, text="Move Up", state=tk.DISABLED, width=12)
+    move_down_btn = tk.Button(btn_frame, text="Move Down", state=tk.DISABLED, width=12)
+
+    def update_move_buttons(*args):
+        sel = tree.selection()
+        if not sel:
+            move_up_btn.config(state=tk.DISABLED)
+            move_down_btn.config(state=tk.DISABLED)
+            return
+        key = str(tree.item(sel[0])['values'][1])
+        keys = list(check_items.keys())
+        if key not in keys:
+            move_up_btn.config(state=tk.DISABLED)
+            move_down_btn.config(state=tk.DISABLED)
+            return
+        idx = keys.index(key)
+        move_up_btn.config(state=tk.NORMAL if idx > 0 else tk.DISABLED)
+        move_down_btn.config(state=tk.NORMAL if idx < len(keys) - 1 else tk.DISABLED)
+
+    def on_move_up():
+        key = get_selected_key()
+        if not key or key not in check_items:
+            return
+        keys = list(check_items.keys())
+        idx = keys.index(key)
+        if idx > 0:
+            keys[idx], keys[idx - 1] = keys[idx - 1], keys[idx]
+            new_items = {k: check_items[k] for k in keys}
+            check_items.clear()
+            check_items.update(new_items)
+            app.save_check_items()
+            refresh_after_search()
+            for child in tree.get_children():
+                if str(tree.item(child)['values'][1]) == key:
+                    tree.selection_set(child)
+                    tree.see(child)
+                    break
+            update_move_buttons()
+
+    def on_move_down():
+        key = get_selected_key()
+        if not key or key not in check_items:
+            return
+        keys = list(check_items.keys())
+        idx = keys.index(key)
+        if idx < len(keys) - 1:
+            keys[idx], keys[idx + 1] = keys[idx + 1], keys[idx]
+            new_items = {k: check_items[k] for k in keys}
+            check_items.clear()
+            check_items.update(new_items)
+            app.save_check_items()
+            refresh_after_search()
+            for child in tree.get_children():
+                if str(tree.item(child)['values'][1]) == key:
+                    tree.selection_set(child)
+                    tree.see(child)
+                    break
+            update_move_buttons()
+
+    move_up_btn.pack(fill=tk.X, pady=2)
+    move_down_btn.pack(fill=tk.X, pady=2)
+    move_up_btn.config(command=on_move_up)
+    move_down_btn.config(command=on_move_down)
+
+    tree.bind("<<TreeviewSelect>>", update_move_buttons)
 
 
 def _create_check(check_items, name, data, refresh_callback):

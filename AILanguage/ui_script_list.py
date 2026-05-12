@@ -264,7 +264,7 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
                                 item.get("Word(resx)") == act.get("Word(resx)") and
                                 item.get("Content") == act.get("Content")):
                             check_info = (f"Lang: {item.get('Lang')}, "
-                                          f"Word(resx): {item.get('Word(resx)')}, "
+                                          f"Function: {item.get('Word(resx)')}, "
                                           f"Content: {item.get('Content')}, "
                                           f"Priority: {item.get('Priority')}, "
                                           f"TL:({item.get('TopLeft (x)')},{item.get('TopLeft (y)')}), "
@@ -280,6 +280,8 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
                 lines.append(f"{idx}. Command line: ")
                 for item in act.get('cmd', '').split('\n'):
                     lines.append(f"{item}")
+            elif t == "delay":
+                lines.append(f"{idx}. Delay: {act.get('seconds', 1)} seconds")
             elif t == 'pre-loop':
                 lines.append(f"{idx}. Pre-loop, get Excel file from: {act.get('file')}")
             elif t == 'post-loop':
@@ -367,11 +369,14 @@ def create_script_list_tab(parent_frame, scripts, script_order, check_items, del
                 script_order[idx] = new_name
                 checkbox_states.pop(sname, None)
                 checkbox_states[new_name] = False
+            old_created = scripts.get(sname, {}).get("created_at", now_iso())
             scripts[new_name] = {
                 "actions": actions,
-                "created_at": now_iso(),
+                "created_at": old_created,
                 "modified_at": now_iso()
             }
+            if new_name != sname and sname in scripts:
+                del scripts[sname]
             save_scripts_and_order(scripts, script_order)
             refresh()
 

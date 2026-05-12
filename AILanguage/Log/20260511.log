@@ -1,0 +1,310 @@
+2026-05-11 10:48:22,630 [INFO] ===== Start new session =====
+2026-05-11 11:03:36,751 [INFO] ===== Start new session =====
+2026-05-11 11:03:51,146 [INFO] Checklist exported to: C:/Users/Admin/OneDrive - \uace0\uc601\ud14c\ud06c\ub180\ub7ec\uc9c0/Desktop/DPI_Import_Export/CheckList_20260511_110343.xlsx
+2026-05-11 12:59:15,269 [INFO] ===== Start new session =====
+2026-05-11 12:59:37,022 [INFO] Waiting for F5 (TopLeft)...
+2026-05-11 13:00:07,294 [INFO] ===== Start new session =====
+2026-05-11 13:08:38,928 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:38,931 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_95xx5o0g_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_95xx5o0g', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:40,300 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:40,301 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_k2wsmpmz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_k2wsmpmz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:41,524 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:41,525 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_2xg35lrr_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_2xg35lrr', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:42,725 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:42,727 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_oyuhwi7o_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_oyuhwi7o', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:43,927 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:43,928 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_z_gheae4_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_z_gheae4', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:45,139 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:45,141 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xu_f_a1h_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xu_f_a1h', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:46,366 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:46,368 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0_ejairs_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0_ejairs', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:47,581 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:47,582 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_5nboumpr_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_5nboumpr', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:48,796 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:48,797 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_frwdeppu_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_frwdeppu', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:50,007 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:50,008 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_boljd1ju_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_boljd1ju', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:51,222 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:51,223 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_tcqegnog_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_tcqegnog', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:52,444 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:52,446 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h182j92d_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h182j92d', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:53,714 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:53,715 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sclr89ig_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sclr89ig', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:54,928 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:54,929 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8cz6xj83_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8cz6xj83', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:56,144 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:56,145 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__h1oj8lr_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__h1oj8lr', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:57,359 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:57,360 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__s05fjsd_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__s05fjsd', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:58,575 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:58,576 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_hadcb4n2_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_hadcb4n2', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:59,787 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130831\Recipe_Information.jpg
+2026-05-11 13:08:59,789 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vmbcdoun_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vmbcdoun', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:08:59,957 [INFO] OCR verify PASS on retry #18: 'Recipe Information' (elapsed=21.1s)
+2026-05-11 13:09:02,361 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:02,363 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_pq1t2x9n_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_pq1t2x9n', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:03,575 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:03,576 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1p2dmtp1_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1p2dmtp1', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:04,775 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:04,777 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_a25ocxqc_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_a25ocxqc', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:05,988 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:05,990 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_74cdgwps_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_74cdgwps', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:07,195 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:07,196 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vrrzzuc9_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vrrzzuc9', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:08,429 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:08,431 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cf60bq13_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cf60bq13', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:09,632 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:09,633 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wj7q4_ta_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wj7q4_ta', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:10,832 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:10,833 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_13o5gjnt_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_13o5gjnt', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:12,044 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:12,045 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xrffy0ul_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xrffy0ul', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:13,248 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:13,249 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_y2990wrz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_y2990wrz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:14,460 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:14,462 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b0_ju3gh_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b0_ju3gh', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:15,658 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:15,659 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xdxnxlpa_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_xdxnxlpa', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:16,860 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:16,862 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l0idzop6_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l0idzop6', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:18,064 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:18,065 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8cm30_eb_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8cm30_eb', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:19,274 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:19,275 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7d51wgqv_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7d51wgqv', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:20,486 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:20,489 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l72d1u7r_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l72d1u7r', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:21,688 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:21,689 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_fw0g2v_k_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_fw0g2v_k', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:22,888 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:22,890 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_w0955cwo_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_w0955cwo', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:24,092 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:24,093 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sk5iryqt_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sk5iryqt', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:25,303 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:25,304 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_97fysnfz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_97fysnfz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:26,516 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:26,518 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4o51yq8q_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4o51yq8q', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:27,716 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:27,719 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_84071i3b_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_84071i3b', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:28,916 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:28,917 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1q1bi_7x_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1q1bi_7x', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:30,117 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:30,118 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_74b2bi41_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_74b2bi41', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:31,322 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:31,323 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_p1z31ixn_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_p1z31ixn', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:32,532 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_130859\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 13:09:32,533 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h84fhs8v_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h84fhs8v', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 13:09:32,707 [WARNING] OCR verify TIMEOUT after 26 retries (30.4s): expected='KOYOUNG TECHNOLOGY', detected='{J Kowyouns TecHNocoay'
+2026-05-11 13:09:32,887 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_130932.xlsx
+2026-05-11 13:25:46,679 [INFO] ===== Start new session =====
+2026-05-11 14:05:12,283 [INFO] ===== Start new session =====
+2026-05-11 14:05:34,006 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140526\Recipe_Information.jpg
+2026-05-11 14:05:34,009 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_pu5uj6s2_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_pu5uj6s2', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:34,370 [INFO] OCR verify PASS on retry #1: 'Recipe Information' (elapsed=0.4s)
+2026-05-11 14:05:36,775 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:36,777 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_lflpgj50_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_lflpgj50', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:37,988 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:37,990 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_slsf0oxw_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_slsf0oxw', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:39,189 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:39,191 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sbte2yuh_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_sbte2yuh', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:40,403 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:40,404 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_49jkwrba_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_49jkwrba', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:41,602 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:41,603 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_3u7dycxo_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_3u7dycxo', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:42,804 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:42,805 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_udeivg_t_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_udeivg_t', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:44,005 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:44,006 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_zm549fik_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_zm549fik', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:45,205 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:45,207 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7s4_9rq6_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7s4_9rq6', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:46,408 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:46,409 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0n4uymfm_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0n4uymfm', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:47,619 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:47,621 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_n70p8rl2_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_n70p8rl2', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:48,822 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:48,824 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_leplwoq8_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_leplwoq8', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:50,034 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:50,035 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ztn6tfov_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ztn6tfov', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:51,233 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:51,235 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_75g8npjx_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_75g8npjx', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:52,434 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:52,435 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_5a9y77k9_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_5a9y77k9', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:53,634 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:53,635 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rxq32z4a_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rxq32z4a', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:54,835 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:54,837 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_i0jbe5rf_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_i0jbe5rf', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:56,035 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:56,037 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_2mquh46c_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_2mquh46c', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:57,238 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:57,239 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_zv9kz4rr_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_zv9kz4rr', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:58,452 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:58,454 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0xevj1ef_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0xevj1ef', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:05:59,650 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:05:59,652 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rmzpjekg_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rmzpjekg', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:00,854 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:00,856 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_f4v_8u7g_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_f4v_8u7g', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:02,055 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:02,056 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_q45n0tgm_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_q45n0tgm', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:03,265 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:03,266 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_mp41_ou0_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_mp41_ou0', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:04,466 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:04,467 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ed4n9889_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ed4n9889', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:05,666 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:05,667 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h1us5tpe_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_h1us5tpe', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:06,867 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_140534\KOYOUNG_TECHNOLOGY.jpg
+2026-05-11 14:06:06,869 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rthzw5i3_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_rthzw5i3', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:06:07,035 [WARNING] OCR verify TIMEOUT after 26 retries (30.3s): expected='KOYOUNG TECHNOLOGY', detected='{J Kowyouns TecHNocoay'
+2026-05-11 14:06:07,240 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_140607.xlsx
+2026-05-11 14:27:12,068 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:12,069 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ja01opbq_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ja01opbq', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:13,286 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:13,288 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_nqcftv94_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_nqcftv94', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:14,498 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:14,500 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9puh0ebu_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9puh0ebu', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:15,712 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:15,713 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cz4nnyob_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cz4nnyob', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:16,924 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:16,925 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0w6ey9i2_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_0w6ey9i2', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:18,126 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:18,126 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9135ecrv_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9135ecrv', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:19,338 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:19,339 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_nldhjxps_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_nldhjxps', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:20,554 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:20,555 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ghnc_4sc_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_ghnc_4sc', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:21,765 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:21,766 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4dwoic9m_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4dwoic9m', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:22,967 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:22,968 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_6rmpoyxi_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_6rmpoyxi', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:24,186 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:24,189 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_x171f45z_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_x171f45z', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:25,445 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:25,446 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wtqxzjeg_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wtqxzjeg', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:26,648 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:26,649 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_eyc4c0ta_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_eyc4c0ta', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:27,850 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:27,851 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_99w1jcau_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_99w1jcau', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:29,051 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_142705\Recipe_Information.jpg
+2026-05-11 14:27:29,052 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wnzu4hop_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_wnzu4hop', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 14:27:29,218 [INFO] OCR verify PASS on retry #15: 'Recipe Information' (elapsed=17.2s)
+2026-05-11 14:27:33,879 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_142733.xlsx
+2026-05-11 15:21:57,322 [INFO] ===== Start new session =====
+2026-05-11 15:26:10,692 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:10,694 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vgmzrfsw_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_vgmzrfsw', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:11,967 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:11,969 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_eigonvx8_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_eigonvx8', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:13,202 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:13,203 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_qq82x9r4_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_qq82x9r4', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:14,419 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:14,420 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9ni4d_gz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_9ni4d_gz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:15,626 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:15,627 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_gsryjvjc_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_gsryjvjc', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:16,847 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:16,848 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_osvo0lqj_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_osvo0lqj', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:18,080 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:18,081 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b4d5ppyl_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b4d5ppyl', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:19,307 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:19,308 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__xlfwhzz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess__xlfwhzz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:20,523 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:20,524 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4tkbxr3r_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4tkbxr3r', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:21,748 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:21,749 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_j2jtium6_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_j2jtium6', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:22,966 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:22,967 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cx2neht4_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_cx2neht4', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:24,192 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:24,193 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_f54zihe3_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_f54zihe3', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:25,405 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:25,406 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1af35kua_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_1af35kua', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:26,618 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:26,619 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l2kta3dh_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_l2kta3dh', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:27,821 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_152603\Recipe_Information.jpg
+2026-05-11 15:26:27,822 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_g_v_5v91_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_g_v_5v91', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:26:27,997 [INFO] OCR verify PASS on retry #15: 'Recipe Information' (elapsed=17.4s)
+2026-05-11 15:26:28,263 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_152627.xlsx
+2026-05-11 15:35:44,430 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:44,431 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8e465z83_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8e465z83', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:45,638 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:45,639 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8mmgeej4_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_8mmgeej4', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:46,866 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:46,867 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_g6mjhkdx_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_g6mjhkdx', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:48,076 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:48,077 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_29ma0okz_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_29ma0okz', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:49,278 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:49,279 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_v5bsshns_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_v5bsshns', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:50,480 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:50,481 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_r6nhg49s_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_r6nhg49s', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:51,694 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:51,695 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_z9is6mo7_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_z9is6mo7', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:52,918 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:52,919 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_gpta5czx_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_gpta5czx', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:54,132 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:54,133 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_812pt6rk_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_812pt6rk', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:55,345 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:55,346 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4l5zn3pf_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_4l5zn3pf', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:56,562 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:56,563 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7r7k1rwl_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7r7k1rwl', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:57,800 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:57,802 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_hd_jig_6_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_hd_jig_6', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:35:59,015 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:35:59,016 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_3_667qev_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_3_667qev', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:36:00,229 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:36:00,230 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b6twmq1t_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_b6twmq1t', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:36:01,443 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_153537\Recipe_Information.jpg
+2026-05-11 15:36:01,444 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_6v72vttt_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_6v72vttt', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 15:36:01,615 [INFO] OCR verify PASS on retry #15: 'Recipe Information' (elapsed=17.2s)
+2026-05-11 15:36:01,623 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_153601.xlsx
+2026-05-11 16:55:13,770 [INFO] ===== Start new session =====
+2026-05-11 16:56:17,934 [INFO] Executing mouse click: button=left, x=133, y=97
+2026-05-11 16:56:19,103 [INFO] Executing mouse click: button=left, x=154, y=188
+2026-05-11 16:56:20,287 [INFO] Executing mouse click: button=left, x=544, y=261
+2026-05-11 16:56:23,857 [INFO] Executing mouse click: button=left, x=513, y=488
+2026-05-11 16:56:26,144 [INFO] Executing mouse click: button=left, x=729, y=496
+2026-05-11 16:56:28,440 [INFO] Executing mouse click: button=left, x=478, y=554
+2026-05-11 16:56:29,615 [INFO] Executing mouse click: button=left, x=1000, y=694
+2026-05-11 16:56:30,789 [INFO] Executing mouse click: button=right, x=1111, y=312
+2026-05-11 16:57:44,951 [INFO] Executing mouse click: button=left, x=133, y=97
+2026-05-11 16:57:46,128 [INFO] Executing mouse click: button=left, x=154, y=188
+2026-05-11 16:57:47,309 [INFO] Executing mouse click: button=left, x=544, y=261
+2026-05-11 16:57:50,877 [INFO] Executing mouse click: button=left, x=513, y=488
+2026-05-11 16:57:53,166 [INFO] Executing mouse click: button=left, x=729, y=496
+2026-05-11 16:57:55,461 [INFO] Executing mouse click: button=left, x=478, y=554
+2026-05-11 16:57:56,637 [INFO] Executing mouse click: button=left, x=1000, y=694
+2026-05-11 16:57:57,812 [INFO] Executing mouse click: button=left, x=1108, y=313
+2026-05-11 16:57:58,986 [INFO] Executing mouse click: button=right, x=1109, y=311
+2026-05-11 17:14:07,216 [INFO] ===== Start new session =====
+2026-05-11 17:14:21,432 [INFO] Executing mouse click: button=left, x=133, y=97
+2026-05-11 17:14:22,606 [INFO] Executing mouse click: button=left, x=154, y=188
+2026-05-11 17:14:23,782 [INFO] Executing mouse click: button=left, x=544, y=261
+2026-05-11 17:14:27,385 [INFO] Executing mouse click: button=left, x=513, y=488
+2026-05-11 17:14:29,673 [INFO] Executing mouse click: button=left, x=729, y=496
+2026-05-11 17:14:31,974 [INFO] Executing mouse click: button=left, x=478, y=554
+2026-05-11 17:14:33,145 [INFO] Executing mouse click: button=left, x=1000, y=694
+2026-05-11 17:14:34,315 [INFO] Executing mouse click: button=left, x=1108, y=313
+2026-05-11 17:14:35,494 [INFO] Executing mouse click: button=right, x=1109, y=311
+2026-05-11 17:15:42,435 [INFO] Executing mouse click: button=left, x=133, y=97
+2026-05-11 17:15:43,616 [INFO] Executing mouse click: button=left, x=154, y=188
+2026-05-11 17:15:44,792 [INFO] Executing mouse click: button=left, x=544, y=261
+2026-05-11 17:15:48,393 [INFO] Executing mouse click: button=left, x=513, y=488
+2026-05-11 17:15:50,683 [INFO] Executing mouse click: button=left, x=729, y=496
+2026-05-11 17:15:52,977 [INFO] Executing mouse click: button=left, x=478, y=554
+2026-05-11 17:15:54,151 [INFO] Executing mouse click: button=left, x=1000, y=694
+2026-05-11 17:15:55,327 [INFO] Executing mouse click: button=left, x=1108, y=313
+2026-05-11 17:15:56,498 [INFO] Executing mouse click: button=right, x=1073, y=387
+2026-05-11 17:19:05,575 [INFO] Waiting for F5 (TopLeft)...
+2026-05-11 17:19:08,362 [INFO] TopLeft recorded at Point(x=845, y=167)
+2026-05-11 17:19:08,362 [INFO] Waiting for F6 (BottomRight)...
+2026-05-11 17:19:10,978 [INFO] BottomRight recorded at Point(x=962, y=189)
+2026-05-11 17:19:10,979 [INFO] Check items saved after position update.
+2026-05-11 17:21:58,051 [INFO] Executing mouse click: button=left, x=133, y=97
+2026-05-11 17:21:59,235 [INFO] Executing mouse click: button=left, x=154, y=188
+2026-05-11 17:22:00,416 [INFO] Executing mouse click: button=left, x=544, y=261
+2026-05-11 17:22:04,010 [INFO] Executing mouse click: button=left, x=513, y=488
+2026-05-11 17:22:06,315 [INFO] Executing mouse click: button=left, x=729, y=496
+2026-05-11 17:22:08,617 [INFO] Executing mouse click: button=left, x=478, y=554
+2026-05-11 17:22:09,787 [INFO] Executing mouse click: button=left, x=1000, y=694
+2026-05-11 17:22:10,964 [INFO] Executing mouse click: button=left, x=1108, y=313
+2026-05-11 17:22:12,190 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_172158\FOV_Live_View.jpg
+2026-05-11 17:22:12,192 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_lfawbiza_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_lfawbiza', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 17:22:13,458 [INFO] Image saved to: F:\DPI_AT_Project\AILanguage\CapturedImg\ocr_20260511_172158\FOV_Live_View.jpg
+2026-05-11 17:22:13,459 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7h0_fhkx_input.PNG', 'C:\\Users\\Admin\\AppData\\Local\\Temp\\tess_7h0_fhkx', '-l', 'eng', '--psm', '7', 'txt']
+2026-05-11 17:22:13,720 [INFO] OCR verify PASS on retry #2: 'FOV Live View' (elapsed=1.6s)
+2026-05-11 17:22:13,720 [INFO] Executing mouse click: button=right, x=1111, y=313
+2026-05-11 17:22:15,341 [INFO] Done. Report saved to: F:\DPI_AT_Project\AILanguage\Result\ocr_result_report_20260511_172215.xlsx

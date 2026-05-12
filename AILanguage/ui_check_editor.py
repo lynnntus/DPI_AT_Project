@@ -42,8 +42,8 @@ def open_check_editor(parent, app, check_items, key=None, on_save=None):
     tk.Label(editor, text="TC No.:").grid(row=1, column=0, sticky='w', padx=10, pady=5)
     tk.Entry(editor, textvariable=vars_["TC No."], width=40).grid(row=1, column=1, columnspan=4, padx=10, pady=5, sticky='w')
 
-    # Word(resx) field
-    tk.Label(editor, text="Word(resx):").grid(row=2, column=0, sticky='w', padx=10, pady=5)
+    # Function field
+    tk.Label(editor, text="Function:").grid(row=2, column=0, sticky='w', padx=10, pady=5)
     tk.Entry(editor, textvariable=vars_["Word(resx)"], width=40).grid(row=2, column=1, columnspan=4, padx=10, pady=5, sticky='w')
 
     # Content field

@@ -22,7 +22,8 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 def _describe_action(action, step_num):
     t = action.get("type", "unknown")
     if t == "click":
-        return f"Step {step_num}: Click at ({action.get('x')}, {action.get('y')})"
+        btn_label = "Right Click" if action.get('button') == 'right' else "Click"
+        return f"Step {step_num}: {btn_label} at ({action.get('x')}, {action.get('y')})"
     elif t == "type":
         if 'excel_col' in action:
             return f"Step {step_num}: Type from Excel column {action.get('excel_col')}"
@@ -35,6 +36,8 @@ def _describe_action(action, step_num):
         return f"Step {step_num}: OCR check '{action.get('Content', '')}'"
     elif t == "scroll":
         return f"Step {step_num}: Scroll {action.get('amount', 0)}"
+    elif t == "delay":
+        return f"Step {step_num}: Delay {action.get('seconds', 1)}s"
     elif t == "cmd_run":
         preview = action.get('cmd', '').split('\n')[0][:30]
         return f"Step {step_num}: Run command '{preview}'"
@@ -183,10 +186,23 @@ def _wait_and_verify(check_item, timestamp_folder, timeout):
         time.sleep(1)
 
 
+def perform_mouse_click(x, y, button="left"):
+    if button not in ("left", "right"):
+        button = "left"
+    logging.info(f"Executing mouse click: button={button}, x={x}, y={y}")
+    if button == "right":
+        pyautogui.moveTo(x, y)
+        pyautogui.mouseDown(button="right")
+        time.sleep(0.05)
+        pyautogui.mouseUp(button="right")
+    else:
+        pyautogui.click(x, y, button=button)
+    show_click_indicator(x, y)
+
+
 def do_action(action, scripts, check_items, results, timestamp_folder, delay, row=None):
     if action['type'] == 'click':
-        show_click_indicator(action['x'], action['y'])
-        pyautogui.click(action['x'], action['y'])
+        perform_mouse_click(action['x'], action['y'], action.get('button', 'left'))
     elif action['type'] == 'type':
         if 'excel_col' in action and row is not None:
             excel_col = action['excel_col'].strip().upper()
@@ -249,6 +265,8 @@ def do_action(action, scripts, check_items, results, timestamp_folder, delay, ro
                     message=f"Script '{sub_script}' not found",
                     expected=f"Script '{sub_script}' exists",
                     actual=f"Script '{sub_script}' was not found")
+    elif action['type'] == 'delay':
+        time.sleep(action.get('seconds', 1))
     elif action['type'] == 'cmd_run':
         run_cmd_block(action['cmd'])
 

@@ -51,6 +51,8 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
     rb_run_script.pack(anchor='w', pady=2)
     rb_cmd = tk.Radiobutton(left_frame, text="Command Line Run", variable=action_var, value="cmd_run")
     rb_cmd.pack(anchor='w', pady=2)
+    rb_delay = tk.Radiobutton(left_frame, text="Delay", variable=action_var, value="delay")
+    rb_delay.pack(anchor='w', pady=2)
     if can_add_pre_loop:
         rb_pre = tk.Radiobutton(left_frame, text="Pre-Loop (Import Excel)", variable=action_var, value="pre-loop")
         rb_pre.pack(anchor='w', pady=2)
@@ -70,6 +72,7 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
 
     # Biến cho từng action
     x_var, y_var = tk.StringVar(), tk.StringVar()
+    button_var = tk.StringVar(value="left")
     text_var = tk.StringVar()
     hotkey_mod_var = tk.StringVar(value="ctrl")
     hotkey_key_var = tk.StringVar()
@@ -94,6 +97,12 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
 
     def show_click_fields():
         clear_right_frame()
+        tk.Label(right_frame, text="Mouse Button:").pack(anchor='w')
+        btn_frame_click = tk.Frame(right_frame)
+        btn_frame_click.pack(anchor='w', pady=(0, 5))
+        tk.Radiobutton(btn_frame_click, text="Left", variable=button_var, value="left").pack(side=tk.LEFT)
+        tk.Radiobutton(btn_frame_click, text="Right", variable=button_var, value="right").pack(side=tk.LEFT)
+
         tk.Label(right_frame, text="X:").pack(anchor='w')
         x_entry = tk.Entry(right_frame, textvariable=x_var, width=15)
         x_entry.pack(anchor='w', pady=(0, 5))
@@ -275,8 +284,8 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
             tk.Radiobutton(lang_frame, text=lang, variable=lang_var, value=lang, command=update_wordresx).pack(
                 side=tk.LEFT)
 
-        # 2. Word(resx) combobox
-        tk.Label(right_frame, text="Word(resx):").pack(anchor='w')
+        # 2. Function combobox
+        tk.Label(right_frame, text="Function:").pack(anchor='w')
         wordresx_cb = ttk.Combobox(right_frame, textvariable=wordresx_var, state="readonly")
         wordresx_cb.pack(anchor='w', fill=tk.X, pady=(0, 10))
 
@@ -299,6 +308,8 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
         content_var.trace_add('write', lambda *_: update_details())
 
         update_wordresx()
+
+    delay_var = tk.StringVar(value="1")
 
     scroll_var = tk.StringVar(value="1")  # Số nấc cuộn chuột
 
@@ -351,6 +362,12 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
         # Để lấy biến ra ngoài (xử lý trong confirm):
         show_preloop_fields.excel_file_var = excel_file_var
 
+    def show_delay_fields():
+        clear_right_frame()
+        tk.Label(right_frame, text="Delay duration (seconds):").pack(anchor='w')
+        tk.Entry(right_frame, textvariable=delay_var, width=10).pack(anchor='w', pady=(0, 5))
+        tk.Label(right_frame, text="Supports decimal values (e.g. 0.5, 1.5)", fg="gray").pack(anchor='w')
+
     def show_postloop_fields():
         clear_right_frame()
         tk.Label(right_frame, text="Exit Excel Loop:: \nStop looping. The following \nactivities will only run once.",
@@ -373,6 +390,8 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
             run_script_listbox = show_run_script_fields()
         elif t == "cmd_run":
             show_cmd_fields()
+        elif t == "delay":
+            show_delay_fields()
         elif t == "pre-loop":
             show_preloop_fields()
         elif t == "post-loop":
@@ -386,6 +405,7 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
         if t == 'click':
             x_var.set(str(action.get('x', '')))
             y_var.set(str(action.get('y', '')))
+            button_var.set(action.get('button', 'left'))
         elif t == 'type':
             if 'excel_col' in action and in_loop:
                 if hasattr(show_type_fields, 'type_input_mode') and show_type_fields.type_input_mode:
@@ -411,6 +431,8 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
         elif t == 'cmd_run':
             if cmd_text_widget[0]:
                 cmd_text_widget[0].insert('1.0', action.get('cmd', ''))
+        elif t == 'delay':
+            delay_var.set(str(action.get('seconds', 1)))
         elif t == 'pre-loop':
             if hasattr(show_preloop_fields, 'excel_file_var'):
                 show_preloop_fields.excel_file_var.set(action.get('file', ''))
@@ -428,7 +450,7 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
             try:
                 x = int(x_var.get())
                 y = int(y_var.get())
-                on_confirm({"type": "click", "x": x, "y": y})
+                on_confirm({"type": "click", "x": x, "y": y, "button": button_var.get()})
             except:
                 messagebox.showerror("Error", "Invalid X or Y value.")
                 return
@@ -457,7 +479,7 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
             on_confirm({"type": "hotkey", "modifier": mod, "key": key})
         elif t == "check":
             if not (lang_var.get() and wordresx_var.get() and content_var.get()):
-                messagebox.showerror("Error", "Please select Language, Word(resx), and Content.")
+                messagebox.showerror("Error", "Please select Language, Function, and Content.")
                 return
             tc = tclabel_var.get()
             pr = prlabel_var.get()
@@ -505,6 +527,15 @@ def open_action_dialog(editor, scripts, name_var, on_confirm, check_items, paren
                 messagebox.showerror("Error", "CMD command(s) required.")
                 return
             on_confirm({"type": "cmd_run", "cmd": cmd_text})
+        elif t == "delay":
+            try:
+                seconds = float(delay_var.get())
+                if seconds <= 0:
+                    raise ValueError
+                on_confirm({"type": "delay", "seconds": seconds})
+            except ValueError:
+                messagebox.showerror("Error", "Delay must be a positive number.")
+                return
         elif t == "pre-loop":
             # on_confirm({"type": "pre-loop"})
             excel_path = show_preloop_fields.excel_file_var.get().strip()
@@ -537,7 +568,7 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
 
     # Cân đối cửa sổ ở giữa màn hình
     editor.update_idletasks()  # Đảm bảo widget được tạo đủ để tính kích thước
-    width, height = 500, 400
+    width, height = 520, 450
     screen_width = editor.winfo_screenwidth()
     screen_height = editor.winfo_screenheight()
     x = (screen_width // 2) - (width // 2)
@@ -557,6 +588,10 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
 
     listbox = tk.Listbox(actions_frame, height=10)
     listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+    scrollbar = tk.Scrollbar(actions_frame, orient=tk.VERTICAL, command=listbox.yview)
+    scrollbar.pack(side=tk.LEFT, fill=tk.Y)
+    listbox.config(yscrollcommand=scrollbar.set)
 
     # for act in actions:
     #     if act['type'] == 'click':
@@ -592,7 +627,8 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
             # Thụt lề: dùng chuỗi tiền tố '   ' khi cần
             prefix = "   |- " if is_in_loop(i) else ""
             if act['type'] == 'click':
-                listbox.insert(tk.END, prefix + f"Click at ({act['x']},{act['y']})")
+                btn_label = "Right Click" if act.get('button') == 'right' else "Click"
+                listbox.insert(tk.END, prefix + f"{btn_label} at ({act['x']},{act['y']})")
             elif act['type'] == 'type':
                 if act.get("excel_col"):
                     listbox.insert(tk.END, prefix + f"Type: [Excel column {act['excel_col']}]")
@@ -609,6 +645,8 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
             elif act['type'] == 'cmd_run':
                 preview = act.get('cmd', '').split('\n')[0]
                 listbox.insert(tk.END, prefix + f"CMD: {preview} ...")
+            elif act['type'] == 'delay':
+                listbox.insert(tk.END, prefix + f"Delay: {act.get('seconds', 1)}s")
             elif act['type'] == 'pre-loop':
                 file_name = act.get("file", "")
                 listbox.insert(tk.END, f"[Pre-Loop] -- Import from Excel: {file_name} --")
@@ -655,7 +693,8 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
     def add_action_to_list(action, listbox, actions):
         actions.append(action)
         if action['type'] == 'click':
-            listbox.insert(tk.END, f"Click at ({action['x']},{action['y']})")
+            btn_label = "Right Click" if action.get('button') == 'right' else "Click"
+            listbox.insert(tk.END, f"{btn_label} at ({action['x']},{action['y']})")
         elif action['type'] == 'type':
             listbox.insert(tk.END, f"Type: {action['text']}")
         elif action['type'] == 'hotkey':
@@ -705,9 +744,29 @@ def open_script_editor_window(parent, scripts, check_items, script_name=None, on
             existing_action=current_action
         )
 
+    def move_up():
+        idx = listbox.curselection()
+        if not idx or idx[0] == 0:
+            return
+        i = idx[0]
+        actions[i], actions[i - 1] = actions[i - 1], actions[i]
+        refresh_listbox()
+        listbox.selection_set(i - 1)
+
+    def move_down():
+        idx = listbox.curselection()
+        if not idx or idx[0] >= len(actions) - 1:
+            return
+        i = idx[0]
+        actions[i], actions[i + 1] = actions[i + 1], actions[i]
+        refresh_listbox()
+        listbox.selection_set(i + 1)
+
     tk.Button(btn_frame, text="Add", command=add_action).pack(pady=2, fill=tk.X)
     tk.Button(btn_frame, text="Update", command=update_action).pack(pady=2, fill=tk.X)
     tk.Button(btn_frame, text="Remove", command=remove_action).pack(pady=2, fill=tk.X)
+    tk.Button(btn_frame, text="Move Up", command=move_up).pack(pady=2, fill=tk.X)
+    tk.Button(btn_frame, text="Move Down", command=move_down).pack(pady=2, fill=tk.X)
 
     listbox.bind("<Double-1>", lambda e: update_action())
 

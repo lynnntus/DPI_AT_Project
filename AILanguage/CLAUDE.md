@@ -156,3 +156,5 @@ Step 4: APPROVE      → user chọn solution, confirm scope
 Step 5: IMPLEMENT    → minimal patches, phase isolation
 Step 6: VERIFY       → tests + runtime verify + regression check
 ```
+
+Bugfix/small change: before editing code, read and follow [`claude_rules/bugfix-small-change.md`](claude_rules/bugfix-small-change.md).

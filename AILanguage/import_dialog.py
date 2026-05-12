@@ -85,7 +85,7 @@ def open_import_dialog(parent, app, check_items, refresh_callback):
                         row[1])  # Cột B là cột số 1 (0-based index)
                     if lang == "English":
                         tc_no = tc_no.replace("C", "E", 1)  # Thay chữ "C" đầu tiên thành "E"
-                    word_resx_raw = row['Word(resx)'] if 'Word(resx)' in df.columns else row[2]
+                    word_resx_raw = row['Function'] if 'Function' in df.columns else (row['Word(resx)'] if 'Word(resx)' in df.columns else row[2])
 
                     # Kiểm tra giá trị nan hoặc rỗng cho Word(resx)
                     if isinstance(word_resx_raw, float) and math.isnan(word_resx_raw):

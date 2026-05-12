@@ -10,6 +10,28 @@
         "BottomRight (x)": "475",
         "BottomRight (y)": "319"
     },
+    "LOGIN-002": {
+        "Lang": "English",
+        "TC No.": "LOGIN-002",
+        "Word(resx)": "Login",
+        "Content": "Recipe Information",
+        "Priority": "상 (High)",
+        "TopLeft (x)": 1289,
+        "TopLeft (y)": 161,
+        "BottomRight (x)": 1408,
+        "BottomRight (y)": 178
+    },
+    "CRE-001": {
+        "Lang": "English",
+        "TC No.": "CRE-001",
+        "Word(resx)": "Create_New_Recipe",
+        "Content": "FOV Live View",
+        "Priority": "상",
+        "TopLeft (x)": "845",
+        "TopLeft (y)": "167",
+        "BottomRight (x)": "962",
+        "BottomRight (y)": "189"
+    },
     "LOGOUT-001": {
         "Lang": "English",
         "TC No.": "LOGOUT-001",
@@ -21,15 +43,15 @@
         "BottomRight (x)": 1057,
         "BottomRight (y)": 741
     },
-    "LOGIN-002": {
+    "CRE-002": {
         "Lang": "English",
-        "TC No.": "LOGIN-002",
-        "Word(resx)": "Login",
-        "Content": "Recipe Information",
+        "TC No.": "CRE-002",
+        "Word(resx)": "Create_New_Recipe",
+        "Content": "Success",
         "Priority": "상 (High)",
-        "TopLeft (x)": 1289,
-        "TopLeft (y)": 161,
-        "BottomRight (x)": 1408,
-        "BottomRight (y)": 178
+        "TopLeft (x)": "1602",
+        "TopLeft (y)": "252",
+        "BottomRight (x)": "1662",
+        "BottomRight (y)": "266"
     }
 }
